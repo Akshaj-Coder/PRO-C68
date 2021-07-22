@@ -14,8 +14,8 @@ export default class App extends React.Component {
 }
 
 const TabNavigator = createBottomTabNavigator({
-  Instagram: Instagram,
-  Facebook: Facebook
+  Instagram: {screen: Instagram},
+  Facebook: {screen: Facebook}
 });
 
 const AppContainer = createAppContainer(TabNavigator);
